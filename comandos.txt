@@ -1,0 +1,24 @@
+- Comando para crear un proyecto
+    django-admin startproject TiendaOnline
+- Luego de crear un proyecto, comando para crear una aplicación
+    python manage.py startapp gestionPedidos
+- Verifica la aplicación agregada al proyecto
+    python manage.py check gestionPedidos
+- Crea la base de datos en SQLite vacía
+    python manage.py makemigrations
+- Para generar los sql de las tablas en pantalla 
+    python manage.py sqlmigrate gestionPedidos 0001
+- Para crear las tablas en la BD
+    python manage.py migrate
+
+    INSTALACIÓN DE MOTORES DE BD
+    - Mysql
+        pip install mysqlclient
+    - PG
+        pip install psycopg2
+
+- Para iniciar el proyecto
+    python manage.py runserver
+
+-Para crear SUPERUSUARIO para administración de django
+    python manage.py createsuperuser
